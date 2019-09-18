@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Lucky Sevens Gane</title>
+  </head>
+  <body>
+    <div>
+      <h1>Lucky Sevens</h1>
+
+      <form method="post">
+        Starting Bet:
+        <input type="text" id="startingBet" />
+      </form>
+
+      <button id="playButton" onclick="onClick()">Play</button>
+    </div>
+
+    <div id="results">
+      <hr />
+      <h1>Results</h1>
+      <table border="1">
+        <tbody>
+          <tr>
+            <td>Starting Bet</td>
+            <td id="betAmount"></td>
+          </tr>
+          <tr>
+            <td>Total Rolls Before Going Broke</td>
+            <td id="totalRolls"></td>
+          </tr>
+          <tr>
+            <td>Highest Amount Won</td>
+            <td id="highestAmount"></td>
+          </tr>
+          <tr>
+            <td>Roll Count at Highest Amount Won</td>
+            <td id="rollCountAtHighest"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
